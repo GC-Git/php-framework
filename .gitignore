@@ -1,3 +1,4 @@
 config/bootstrap.php
 log/*
 .htaccess
+.idea
