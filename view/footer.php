@@ -6,7 +6,7 @@
 
     <div id="footer">
       <div class="container">
-        <p class="text-muted">Footer content here.</p>
+        <p class="text-muted">created by: Gordon Delfel</p>
       </div>
     </div>
 

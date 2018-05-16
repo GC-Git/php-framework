@@ -21,7 +21,7 @@
             // Demo Admin User
             array (
                 'username'  => 'admin',
-                'password'  => 'iddqd',
+                'password'  => 'password',
                 'email'     => 'janesmith@gmail.com',
                 'lastName'  => 'Smith',
                 'firstName' => 'Jane',
