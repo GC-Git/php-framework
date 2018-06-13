@@ -74,7 +74,7 @@ class auth {
             $_SESSION['email']     = $this->user->getEmail();
             $_SESSION['role']      = $this->user->getRole();
 
-            header ( 'Location: ' . APP_DOC_ROOT );
+            header ( 'Location: ' . APP_DOC_ROOT . '/admin');
         }
         # Auth failed, display login form with error
         else {

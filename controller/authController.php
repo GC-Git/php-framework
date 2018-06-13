@@ -24,8 +24,7 @@ switch ( $route->getAction() ) {
         $_SESSION = 0;
         session_destroy();
         session_start();
-        header ( "Location: auth/login" );
-
+        header('Location: '. APP_DOC_ROOT . '/trailers');
 
     default:
         include( APP_VIEW . '/header.php' );

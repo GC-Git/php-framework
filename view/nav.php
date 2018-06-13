@@ -12,28 +12,16 @@
           <a class="navbar-brand" href="<?php echo APP_DOC_ROOT . '/trailers'; ?>">Bad Movie Trailers</a>
         </div>
         <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-              <li><a href="<?php echo APP_DOC_ROOT . '/trailers'; ?>">Trailers</a></li>
-              <li><a href="<?php echo APP_DOC_ROOT . '/blog'; ?>">Blog</a></li>
-              <li><a href="<?php echo APP_DOC_ROOT . '/about'; ?>">About</a></li>
-              <li><a href="<?php echo APP_DOC_ROOT . '/admin'; ?>"><small>Admin Panel</small></a></li>
-          </ul>
 
-<?php if ( 0 !== APP_AUTH_TYPE && isset($_SESSION["username"]) ) { ?>
 
-          <ul class="nav navbar-nav navbar-right">
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php print $_SESSION['username']; ?> <b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                  <li><a href="#">Profile</a></li>
-                  <li><a href="#">Settings</a></li>
-                  <li class="divider"></li>
-                  <li><a href="<?php echo APP_DOC_ROOT; ?>/auth/logout">Logout</a></li>
-              </ul>
-            </li>
-          </ul>
-
-<?php } ?>
+            <ul class="nav navbar-nav navbar-right">
+            <?php if ( 0 !== APP_AUTH_TYPE && isset($_SESSION["username"]) ) { ?>
+                <li><a href="<?php echo APP_DOC_ROOT . '/admin'; ?>"><span class="glyphicon glyphicon-plus"></span> New Trailer</a></li>
+                <li><a href="<?php echo APP_DOC_ROOT; ?>/auth/logout">Logout</a></li>
+            <?php } else {?>
+                <li><a href="<?php echo APP_DOC_ROOT . '/admin'; ?>">Login</a></li>
+            <?php } ?>
+            </ul>
 
         </div>
       </div>
